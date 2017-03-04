@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
+        <title>Mad Libs</title>
+        <script src='lib/jquery.js'></script>
         <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js'></script>
+        <script src='scripts.js'></script>
+        <link href='lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='styles.css' rel='stylesheet'>
     </head>
     <body ng-app>
-        <p>
-            <label for='noun'>Noun:</label>
-            <input type='text' id='noun' ng-model='noun'>
-        </p>
-            <p>
-            <label for='adjective'>Adjective:</label>
-            <input type='text' id='adjective' ng-model='adjective'>
-        </p>
-        <h1>My favorite {{noun}} is {{adjective}}</h1>
+        <div class='container'>
+            <h1>Mad Libs!</h1>
+            <div class='form-group'>
+                <p>
+                    <label for='a1'>Adjective #1:</label>
+                    <input type='text' class="form-control" id='a1' ng-model='a1'>
+                </p>
+                <p>
+                    <label for='a2'>Adjective #2:</label>
+                    <input type='text' class="form-control" id='a2' ng-model='a2'>
+                </p>
+                <p>
+                    <label for='a3'>Adjective #3:</label>
+                    <input type='text' class="form-control" id='a3' ng-model='a3'>
+                </p>
+                <p>
+                    <label for='a4'>Adjective #4:</label>
+                    <input type='text' class="form-control" id='a4' ng-model='a4'>
+                </p>
+                <p>
+                    <label for='a5'>Adjective #5:</label>
+                    <input type='text' class="form-control" id='a5' ng-model='a5'>
+                </p>
+                <p>
+                    <label for='a6'>Adjective #6:</label>
+                    <input type='text' class="form-control" id='a6' ng-model='a6'>
+                </p>
+                <p>
+                    <label for='ad'>Adverb</label>
+                    <input type='text' class="form-control" id='ad' ng-model='ad'>
+                </p>
+                <p>
+                    <label for='co'>Color:</label>
+                    <input type='text' class="form-control" id='co' ng-model='co'>
+                </p>
+                <p>
+                    <label for='n1'>Noun #1:</label>
+                    <input type='text' class="form-control" id='n1' ng-model='n1'>
+                </p>
+                <p>
+                    <label for='n2'>Noun #2:</label>
+                    <input type='text' class="form-control" id='n2' ng-model='n2'>
+                </p>
+                <p>
+                    <label for='n3'>Noun #3:</label>
+                    <input type='text' class="form-control" id='n3' ng-model='n3'>
+                </p>
+                <p>
+                    <label for='n4'>Noun #4:</label>
+                    <input type='text' class="form-control" id='n4' ng-model='n4'>
+                </p>
+                <p>
+                    <label for='n5'>Noun #5:</label>
+                    <input type='text' class="form-control" id='n5' ng-model='n5'>
+                </p>
+                <p>
+                    <label for='n6'>Noun #6:</label>
+                    <input type='text' class="form-control" id='n6' ng-model='n6'>
+                </p>
+                <p>
+                    <label for='no'>Number:</label>
+                    <input type='text' class="form-control" id='no' ng-model='no'>
+                </p>
+                <p>
+                    <label for='pn'>Plural Noun:</label>
+                    <input type='text' class="form-control" id='pn' ng-model='pn'>
+                </p>
+                <button class='btn'>Write a story!</button>
+            </div>
+            <div class='jumbotron'>
+                <p id='story'>It has often been said that "a dog is a man's best {{n1 || 'NOUN'}}." Dogs are very {{a1 || 'ADJECTIVE'}} and can be taught many {{a2 || 'ADJECTIVE'}} tricks. A dog can be trained to carry an {{n2 || 'NOUN'}} in his mouth, and if you throw his {{n3 || 'NOUN'}}, he will run and fetch it. Dogs will also bark {{ad || 'ADVERB'}} if someone tries to break into your {{n4 || 'NOUN'}} during the night. One of the most popular canine pets today is the <span class="capitalize">{{n5 || 'NOUN'}}</span> Spaniel. Spaniels have curly {{co || 'COLOR'}} coats and {{a3 || 'ADJECTIVE'}} ears. They also have very {{a4 || 'ADJECTIVE'}} dispositions and live to be {{no * 7 || 'NUMBER'}} years old. Other popular dogs are <span class="capitalize">{{a5 || 'ADJECTIVE'}}</span> Terriers, German <span class="capitalize">{{pn || 'PLURAL NOUN'}}</span>, and the <span class="capitalize">{{a6 || 'ADJECTIVE'}}</span> Poodle. Every home should have a loyal dog for a {{n6 || 'NOUN'}}.</p>
+            </div>
+        </div>
     </body>
 </html>
