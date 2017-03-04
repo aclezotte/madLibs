@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js'></script>
+    </head>
+    <body ng-app>
+        <p>
+            <label for='noun'>Noun:</label>
+            <input type='text' id='noun' ng-model='noun'>
+        </p>
+            <p>
+            <label for='adjective'>Adjective:</label>
+            <input type='text' id='adjective' ng-model='adjective'>
+        </p>
+        <h1>My favorite {{noun}} is {{adjective}}</h1>
+    </body>
+</html>
