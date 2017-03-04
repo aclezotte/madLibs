@@ -5,3 +5,8 @@ h1 {
 .capitalize {
     text-transform: capitalize;
 }
+
+.btn {
+    font-size: 2em;
+    margin: 1% 0;
+}

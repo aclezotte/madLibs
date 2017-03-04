@@ -1,5 +1,7 @@
 $(function(){
     
+    $.backstretch("images/seigaiha.png");
+    
     $('.jumbotron').hide();
     
     $('button').on('click', function(){
